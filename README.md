@@ -9,3 +9,12 @@
 1. Download the project
 2. Install Dependencies: yarn
 3. Run the project: yarn dev
+
+## Repo: 
+https://github.com/SaulDev09/rapidita-02-typingEffectReact18/blob/main/README.md
+
+## Demo:
+https://vb3r45-5173.csb.app
+
+## CodeSandbox:
+https://codesandbox.io/p/github/SaulDev09/rapidita-02-typingEffectReact18
