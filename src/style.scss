@@ -1,0 +1,64 @@
+#root {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 200%;
+  width: 50%;
+  position: fixed;
+  z-index: 2;
+
+  >input,
+  >.placeholder {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+
+  >.placeholder {
+    pointer-events: none;
+    color: #00FF41;
+    @include typed("Hello Friend,",
+      "Here is a new Rapidita",
+      "React + HTML + SCSS",
+      "Source code in the first comment",
+      "Go ahead and have fun ☕",
+      "Keep dreaming, SaulDev09 👨🏽‍💻",
+      "Credits: Typed.css by Brandon McConnell",
+      (type: .1, pause-deleted: .5));
+  }
+
+  >input {
+
+    &:focus,
+    &:active {
+      +.placeholder {
+        display: none;
+      }
+    }
+  }
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
